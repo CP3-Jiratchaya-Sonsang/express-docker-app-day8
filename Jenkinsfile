@@ -175,7 +175,7 @@ pipeline {
         echo "Pipeline succeeded!"
     }
     failure {
-        // ส่งข้อมูลไปยัง n8n webhook เมื่อ pipeline ล้มเหลว
+        // ส่งข้อมูลไปยัง n8n webhook เมื่อ pipeline ล้มเหลว!
         // ใช้ Jenkins HTTP Request Plugin (ต้องติดตั้งก่อน)
         // หรือใช้ Java URLConnection แทน (fallback) ถ้า httpRequest ไม่ได้ติดตั้ง
         // n8n-webhook คือ Jenkins Secret Text Credential ที่เก็บ URL ของ n8
